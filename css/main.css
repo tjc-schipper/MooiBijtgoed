@@ -1,0 +1,14 @@
+/* Custom */
+
+body {
+	background-image: url('../img/bg.png');
+	background-repeat: repeat;
+}
+
+#logo {
+	background-image: url('../img/logo.png');
+	background-repeat: none;
+	width: 232px;
+	height: 83px;
+	position: relative;
+}
