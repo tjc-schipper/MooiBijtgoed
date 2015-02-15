@@ -1,14 +1,41 @@
-/* Custom */
+/* Lydia is een lieverd */
 
 body {
 	background-image: url('../img/bg.png');
 	background-repeat: repeat;
 }
 
+div#header {
+	height: 200px;
+}
+
 #logo {
-	background-image: url('../img/logo.png');
-	background-repeat: none;
-	width: 232px;
-	height: 83px;
-	position: relative;
+	float: left;
+	margin-top: 40px;
+	display: inline;
+}
+
+div.address {
+	float: right;
+	display:inline;
+	margin-top: 51px;
+}
+
+div.address p {
+	font-family: 'Gotham', 'Helvetica', 'Sans-serif';
+	font-size: 11pt;
+	color: #575756;
+}
+
+/* Een megalieverd */
+
+div#photoslider {
+	max-height: 400px;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+div#photoslider img {
+	margin-left: 0;
+	margin-right: 0;
 }

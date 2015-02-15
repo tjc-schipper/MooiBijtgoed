@@ -1,20 +1,54 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>P. The Tandartsenpraktijk</title>
+	<title>Tandartspraktijk P.T. The</title>
 	<!-- 960 grid -->
 	<link rel="stylesheet" type="text/css" href="./css/960_12_col.css"/>
 	<link rel="stylesheet" type="text/css" href="./css/reset.css"/>
 
-	<link rel="stylesheet" type="text/css" href="./css/main.css"/>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	
+
+	<link rel="stylesheet/less" type="text/css" href="./css/main.less"/>
+	<script src="./js/less.js"></script>
 </head>
 <body>
-	<div id="header">
-		<div id="logo"></div>
-	</div>
-	<div id="content">
-		Under construction.
+	<div id="main" class="container_12">
+		<div id="header" class="grid_12">
+			<img src="./img/logo.png" id="logo"/>
+			<div class="address">
+				<p>Gerwenseweg 9A</p>
+				<p>5708 EH Helmond</p>
+				<p>info@mooibijtgoed.nl</p>
+				<p>0492 - 55 45 01</p>
+			</div>
+			<div id="menu">
+				<p class="tempmessage">Deze pagina wordt momenteel ontwikkeld.</p>
+			</div>
+		</div>
+		<div id="content">
+			<div id="photoslider" class="grid_12" style="background-color: blue">
+				<!--Stel images-->
+				<img class="grid_12" src="./img/slider/1.jpg" alt="Neeeeeeee beter he?!" />
+				<!--
+				<img class="grid_12" src="./img/slider/2.jpg" alt="Neeeeeeee beter he?!" />
+				<img class="grid_12" src="./img/slider/3.jpg" alt="Neeeeeeee beter he?!" />-->
+			</div>
+			<div id="blocks" style="background-color: gray">
+				<div class="grid_4" style="background-color: red">
+					<!-- Wat tekst -->
+					Derp
+				</div>
+				<div class="grid_4" style="background-color: red">
+					<!-- Wat tekst -->
+					Herp
+				</div>
+				<div class="grid_4" style="background-color: red">
+					<!-- Wat tekst -->
+					Lemmy says hi
+				</div>
+			</div>
+		</div>
 	</div>
 </body>
 </html>
