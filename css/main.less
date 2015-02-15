@@ -1,15 +1,26 @@
 /* Lydia is een lieverd */
 /* Een megalieverd */
 
+@default_font: 'Gotham', 'Helvetica', 'Arial', 'Verdana', 'Sans-serif';
+@new_font: 'Proxima Nova Light', 'Gotham', 'Helvetica', 'Arial', 'Verdana', 'Sans-serif';
+@text_gray: #575756;
+@light_gray: #E4E2DF;
+@lighter_gray: #F4F3F2;
+@green: #1B8EA9;
+
+
 body {
 	background-image: url('../img/bg.png');
 	background-repeat: repeat;
 }
 
+* {
+	font-family: @new_font;
+}
+
 
 #header {
-	height: 200px;
-	background-color: red;
+	height: 227px;
 
 	#logo {
 		float: left;
@@ -17,28 +28,98 @@ body {
 		display: inline;
 	}
 
-	&.address {
+	.address {
 		float: right;
 		display:inline;
 		margin-top: 51px;
 
 		p {
-			font-family: 'Gotham', 'Helvetica', 'Sans-serif';
+			font-family: @default_font;
 			font-size: 11pt;
-			color: #575756;
+			color: @text_gray;
 		}
+	}
+
+	#menu {
+		float: left;
+		clear: left;
+		margin-top: 40px;
+		font-size: 16pt;
+		text-transform: uppercase;
 	}
 }
 
 div#content {
 	#photoslider {
-		max-height: 400px;
+		height: 400px;
 		padding-left: 0;
 		padding-right: 0;
+		overflow-y: hidden;
+
+		margin-top: 0;
+		margin-bottom: 40px;
 
 		img {
 			margin-left: 0;
 			margin-right: 0;
+		}
+	}
+
+	#blocks {
+		margin-top: 40px;
+		margin-bottom: 20px;
+
+		.block {
+			background-color: @lighter_gray;
+			min-height: 240px;
+			
+			* {
+				margin: 20px;
+				a {
+					margin-left: 0;
+				}
+			}
+
+			p.header {
+				font-size: 16pt;
+				color: @green;
+				margin: 20px 20px 10px 20px;
+			}
+
+			p, div {
+				font-size: 12pt;
+				color: @text_gray;
+				margin: 5px 20px;
+			}
+			
+			/* Google maps applet */
+			map-canvas {
+				width: 300px;
+				height: 300px;
+				background-color: #CCC;
+			}
+
+			div.openingstijden {
+				float: left;
+				width: 100px;
+				margin: 0;
+				&.links {
+					clear: left;
+				}
+
+				p {
+					margin: 0;
+				}
+			}
+
+			.address {
+				float: left;
+				margin: 0;
+				p {
+					margin: 5px 20px;
+				}
+			}
+
 		}
 	}
 }
